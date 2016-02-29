@@ -1,5 +1,5 @@
 (function(){
-  "use struct";
+  "use strict";
 
   var w = 720;
   var h = 487;
