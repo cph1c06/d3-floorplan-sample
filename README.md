@@ -33,6 +33,18 @@ server.js作成
 $ touch server.js
 ```
 
+publicフォルダ作成
+
+```
+mkdir public
+```
+
+express準備
+
+``` 
+$ npm install express --save
+```
+
 ローカルサーバ起動
 
 ```
