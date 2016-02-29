@@ -27,10 +27,10 @@ $ npm init
 }
 ```
 
-server.js作成
+express準備
 
-```
-$ touch server.js
+``` 
+$ npm install express --save
 ```
 
 publicフォルダ作成
@@ -39,10 +39,23 @@ publicフォルダ作成
 $ mkdir public
 ```
 
-express準備
+server.js作成
 
-``` 
-$ npm install express --save
+```
+$ touch server.js
+```
+
+```
+var express = require('express');
+var app = express();
+var port = process.env.PORT || 8080;
+
+// Serve static files
+app.use(express.static(__dirname + '/public'));
+
+// Serve your app
+console.log('Served: http://localhost:' + port);
+app.listen(port);
 ```
 
 ローカルサーバ起動
