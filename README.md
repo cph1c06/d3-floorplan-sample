@@ -36,7 +36,7 @@ $ touch server.js
 publicフォルダ作成
 
 ```
-mkdir public
+$ mkdir public
 ```
 
 express準備
