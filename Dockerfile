@@ -6,6 +6,7 @@ WORKDIR /app
 # A wildcard is used to ensure both package.json AND package-lock.json are copied
 # where available (npm@5+)
 COPY package*.json ./
+RUN npm cache clean -force
 RUN npm install express --save
 RUN npm install webshot --save
 RUN npm install
